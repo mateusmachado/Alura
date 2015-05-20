@@ -34,7 +34,7 @@ public class Login extends HttpServlet {
 			writer.println("<html><body>Usuário inválido</body></html>");
 		} else {
 			HttpSession session = req.getSession();
-			session.setAttribute("usuario.logado", usuario);
+			session.setAttribute("usuarioLogado", usuario);
 
 			Cookie cookie = new Cookie("usuario.logado", email);
 			cookie.setMaxAge(10 * 60);
