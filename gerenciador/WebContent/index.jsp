@@ -18,8 +18,9 @@
 			type="password" name="senha" /> <input type="submit" value="Logar" />
 	</form>
 
-	<form action="logou" method="POST">
-		<input type="submit"value"Logout">
+	<form action="executa" method="POST">
+	    <input type="hidden" name="tarefa" value="Logout">
+		<input type="submit" value"Logout">
 	</form>
 </body>
 </html>
